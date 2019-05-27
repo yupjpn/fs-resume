@@ -1,14 +1,93 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+    <ion-toolbar>
+      <ion-title>
+        Yuki Peters
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="ion-padding">
+      <ion-avatar class="avatar">
+        <img
+          width="256"
+          src="https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4395628.png"
+        />
+      </ion-avatar>
+      Computer Science Student at Duke University
+    </div>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label>First Name</ion-label>
+        Yuki 
+      </ion-item>
+      <ion-item>
+        <ion-label>Last Name</ion-label>
+        Peters
+      </ion-item>
+      <ion-item>
+        <ion-icon name="pin"></ion-icon>
+        <ion-label>Hometown</ion-label>
+        Tokyo, Japan
+      </ion-item>
+      <ion-item>
+          <ion-label>Favorite NBA Team</ion-label>
+          Dallas Mavericks
+        </ion-item>
+      <ion-item>
+          <ion-label>GitHub Username</ion-label>
+          yupjpn
+        </ion-item>
+      <ion-item>
+        <ion-label>Date of Birth</ion-label>
+        <ion-datetime
+          disabled
+          displayFormat="MM/DD/YYYY"
+          [(ngModel)]="myDateOfBirth"
+        ></ion-datetime>
+      </ion-item>
+    </ion-list>
+  
+    <div class="ion-padding">
+      <h2>My Interests</h2>
+      <ion-chip color="secondary">
+          <ion-avatar>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/A1cd6TMkAML._SL1500_.jpg" />
+          </ion-avatar>
+          <ion-label>Basketball</ion-label>
+        </ion-chip>
+  
+      <ion-chip color="#9b53c1">
+          <ion-avatar>
+            <img src="https://pbs.twimg.com/media/Ck83eSYUgAApSTl.jpg:large" />
+          </ion-avatar>
+          <ion-label>Coding </ion-label>
+        </ion-chip>
+  
+      <ion-chip color="warning">
+          <ion-avatar>
+            <img src="https://pbs.twimg.com/media/Ck83eSYUgAApSTl.jpg:large" />
+          </ion-avatar>
+          <ion-label>The Folks </ion-label>
+        </ion-chip>
+  
+      <ion-chip color="danger">
+        <ion-avatar>
+          <img src="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-217666-whip_nae-nae.jpg?crop=1260:720&width=1260" />
+        </ion-avatar>
+        <ion-label>The Whip </ion-label>
+      </ion-chip>
+  
+      <ion-chip color="primary">
+        <ion-avatar>
+          <img src="https://friendlystock.com/wp-content/uploads/2018/06/8-dabbing-police-officer-with-moustache-character-vector-cartoon-clipart.jpg" />
+        </ion-avatar>
+        <ion-label>Dabbing</ion-label>
+      </ion-chip>
+    </div>
+  
+    <ion-button (click)="presentAlert()">Press me for an alert!</ion-button>
+    <ion-button (click)="presentToast()">Press me for a toast!</ion-button>
+    <ion-button (click)="presentToastWithOptions()">Press me for a different type of toast!</ion-button>    
+  </ion-content>
